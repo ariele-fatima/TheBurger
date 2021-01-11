@@ -1,0 +1,305 @@
+
+/*Cardapio - Sobre a comida e o lugar*/
+
+
+.foodMenuSection{
+    height: 1000px;
+    background-color: white;
+    color: black;
+}
+
+.aboutFood{
+    margin: auto;
+    height: 30%;
+}
+
+.aboutFoodList{
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutFoodItem{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.aboutFoodItem img{
+    padding: 10px;
+    width: 100px;
+}
+
+.aboutFoodTitle{
+    font-size: 20px;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+.aboutFoodText {
+    margin: auto;
+    font-size: 14px;
+}
+
+
+/*Cardapio - Itens a venda*/
+.foodMenuOptions {
+    color:black;
+    width: auto;
+    height: 70%;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('../images/MenuBackground1.png');
+
+}
+
+.foodMenuOptionsContent{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 60%;
+    margin: auto;
+
+}
+
+.foodMenuTitle{
+    margin: auto;
+    width: 90%;
+    text-align: center;
+    padding-top: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.foodMenuTitle h2{
+    font-size: 40px;    
+}
+
+.foodMenuTitle span{
+    font-size: 25px;
+    font-style: italic;
+}
+
+.foodMenuItems{
+    display: flex;
+    justify-content: space-between;
+}
+
+.foodMenuProduct{
+    margin: 0;
+    padding-bottom: 10px;
+    font-size: 20px;
+    width: max-content;
+    display: inline-block;   
+}
+
+
+.foodMenuIngredients{
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;    
+}
+
+.foodMenuPrice{
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.foodMenuText{
+    width: max-content;
+    margin: 0;
+}
+
+.foodMenuValue{
+    width: max-content;
+    align-self: center;
+    padding-left: 20px;
+}
+
+.foodMenuColumn{
+    align-self: center;
+    width: max-content;
+}
+
+.btnFoodMenuConteiner{
+    text-align: center;
+}
+
+.btnFoodMenu{
+    font-size: 20px;
+    font-weight: 600;
+    border: solid 2px black;
+    border-radius: 25px;
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.btnFoodMenu:hover{
+    cursor: pointer;
+    background-color: #D11F1F;
+    color: white;
+    border-color: white;
+    transition: 1s;
+}
+
+
+@media screen and (max-width: 1240px){
+
+    .foodMenuSection{
+        height: 1200px;
+    }
+
+    .aboutFood{
+        height: 25%;
+    }
+
+    .foodMenuOptions{
+        height: 75%;
+    }
+
+    .foodMenuOptionsContent{
+        flex-direction: column;  
+        justify-content: center;      
+        width: 90%;
+        padding-top: 40px;
+    }
+    
+
+    
+    .foodMenuValue{
+        padding-left: 40px;
+    }
+    
+    .foodMenuItems{
+        padding:10px;
+        justify-content: space-between;
+        margin: 0;
+        
+    }
+
+
+
+    .btnFoodMenuConteiner{
+        height: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .foodMenuTitle{
+        padding-top: 50px;
+    }
+    
+    
+    .foodMenuTitle h2{
+        font-size: 38px;
+        margin: 0;
+    }
+
+    .foodMenuTitle span{
+        font-size: 22px;
+    }
+    
+
+
+}
+
+@media screen and (max-width: 1000px){
+    .aboutFoodItem:nth-last-child(-n + 2){
+        display: none;
+    }
+}
+
+@media screen and (max-width: 840px){
+    .aboutFoodItem:nth-last-child(-n + 3){
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    .aboutFoodList{
+        justify-content: space-evenly;
+    }
+
+    .aboutFoodItem:nth-last-child(-n + 4){
+        display: none;
+    }
+
+    .foodMenuTitle h2{
+        font-size: 28px;
+        margin: 0;
+    }
+
+    .foodMenuTitle span{
+        font-size: 18px;
+    }
+
+    .foodMenuProduct{
+        font-size: 16px;
+    }
+    
+    
+    .foodMenuIngredients{
+        font-size: 12px;
+    }
+    
+    .foodMenuPrice{
+        font-size: 20px;
+    }
+    
+
+}
+
+@media screen and (max-width: 560px){
+    .foodMenuSection{
+        height: 1100px;
+    }
+    
+    .aboutFood{
+        display: none;
+    }
+
+    .foodMenuOptions{
+        height: 1100px;
+    }
+
+    .foodMenuOptionsContent{
+        padding-top: 80px;
+    }
+
+    .foodMenuColumn{
+        width: 250px;
+    }
+
+    .foodMenuTitle h2{
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .foodMenuTitle span{
+        font-size: 14px;
+    }
+
+    .foodMenuProduct{
+        font-size: 16px;        
+    }
+    
+    .foodMenuIngredients{
+        font-size: 12px;        
+    }
+    
+    .foodMenuPrice{
+        font-size: 16px;
+    }   
+
+    .btnFoodMenuConteiner{
+        height: 20%;
+    }
+
+    .btnFoodMenu{
+        font-size: 16px;
+    }
+
+}

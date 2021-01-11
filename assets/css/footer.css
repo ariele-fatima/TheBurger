@@ -1,0 +1,33 @@
+/*Rodapé*/
+.footerConteiner{
+    margin: 0;
+    padding: 0;
+    background: black;
+    box-sizing: border-box;
+}
+
+.footerContent{
+    text-align: center;
+    color: white;
+}
+
+.footerContent p {
+    margin: 0;
+    padding: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footerContent a {
+    text-decoration: none;
+    color: red;
+}
+
+@media screen and (max-width: 380px){
+
+    .footerContent p {
+      font-size: 10px;
+      padding: 8px;
+    }
+    
+}

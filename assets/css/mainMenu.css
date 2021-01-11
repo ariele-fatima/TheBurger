@@ -1,0 +1,221 @@
+
+/* Menu superior */
+
+.conteinerHeader{
+    width: 100%; 
+    height: min-content;
+    padding: 0;
+    
+}
+
+.menuTopConteiner{
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    transition: 1s;
+}
+
+.menuTopContent{
+    width: calc(100% - 10%);
+    margin: auto;
+    display: flex;
+}
+
+
+.logo{
+    height: 100px;
+
+}
+
+.menuTop{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#navId {
+    padding: 0;
+    margin: 0;
+    width: max-content;
+    height: 100px;
+}
+
+.mainMenuBar{
+    color:white;
+    list-style-type: none;
+    font-size: 32px;
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    margin: 0;
+    transform: translateY(40%);
+}
+
+.menuItem {
+    padding: 10px 15px;
+    width: auto;
+}
+
+.menuItemLink{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.menuItemLink:hover{
+    color: red;
+    transition: 0.3s;
+}
+
+.socialMediaTop{
+    display: flex;
+    width: max-content;
+    align-self: center;
+}
+
+.socialMediaTop img{
+    width: 30px;
+    padding: 10px;
+}
+
+.socialMediaTopLink:hover{
+    filter: brightness(0.5) sepia(1) hue-rotate(-50deg) saturate(20);
+    transition: 0.3s;
+}
+
+.anchor{
+    position: relative;
+    top: -100px;
+}
+
+/*Menu alternativo*/
+
+.conteinerHeaderAlt{
+    background-color: #D11F1F;
+    transition: 1s;
+}
+
+.menuItemLinkAlt:hover{
+    color: black;
+}
+
+.socialMediaTopLinkAlt:hover{
+    filter: brightness(0);
+}
+
+
+/*Menu Mobile*/
+
+.menuMobile{
+    background-color: white;
+    width: 300px;
+    height: 650px; 
+    left: -350px;
+    position: fixed;
+    transition: 1s;
+    z-index: 9999;
+}
+
+.btnMenuMobile{
+    width: max-content;
+    padding-top: 30px;
+    padding-left: 30px;
+    position: absolute;
+}
+
+.btnMenuMobile img{
+    display: none;
+    width: 40px;  
+}
+
+.menuMobileMove{
+    left:0;
+    transition: 1s;
+}
+
+.closedMobile{
+    position: relative;
+    width: 20px;
+    top: -50px;
+    left: 70px;
+}
+
+.logoMobile{
+    margin-left: 110px; 
+}
+
+.menuItemMob{
+    list-style-type: none;
+    text-align: center;
+}
+
+.mainMenuBarMob {
+    padding: 0;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+}
+
+.menuItemMob{
+    padding: 10px ;
+}
+
+.menuItemMob a{
+    text-decoration: none;
+    color: black;
+}
+
+.menuItemMob a:hover{
+    color: #D11F1F;
+    transition: 0.3s;
+}
+
+.menuSeparatorMob{
+    width: 150px;
+}
+
+.socialMediaMob{
+    transform: translateY(50%);
+    text-align: center;
+}
+
+
+.socialMediaMob img{
+    width: 30px;
+    filter: brightness(0.2) sepia(1) hue-rotate(-20deg) saturate(13);
+}
+
+
+.socialMediaMob img:hover{
+    filter: brightness(0);
+    transition: 0.5s;    
+}
+
+@media screen and (max-width: 1060px){
+    .menuTopConteiner{
+        display: none;
+    }
+
+    .btnMenuMobile{
+        display: block;
+    }
+
+    .btnMenuMobile img{
+        display: block;
+    }
+}
+
+@media screen and (max-height: 640px){
+    .menuMobile{
+        height: 640px; 
+      
+    }
+
+
+}
+
+

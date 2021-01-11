@@ -1,0 +1,164 @@
+/*Contato*/
+.contactConteiner{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.CallUsContent{
+    width: 50%;    
+    background-color: #D11F1F;    
+    color: white;  
+}
+
+.CallUsAbout{
+    margin-left: 10%;
+    font-family: 'Poppins', sans-serif;    
+}
+
+.CallUsAboutContent{
+    display: flex;
+    width: max-content;    
+    padding-bottom: 20px;
+}
+
+
+.CallUsAbout h2{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    margin: 0;
+}
+
+.CallUsAbout h3{
+    margin: 0;
+    padding-bottom: 30px;
+    font-size: 35px;
+    width: max-content;
+}
+
+.CallUsImg{
+    width: 60px;
+    margin-right: 15px;
+}
+
+.CallUsText{
+    width: max-content;
+    font-size: 16px;
+}
+
+.CallUsImg img{
+    width: 100%;
+}
+
+.CallUsImg img:hover{
+    filter: brightness(0);
+    transition: 0.5s;    
+}
+
+
+.socialMediaEnd img{
+    width: 30px;
+}
+
+.socialMediaEndLink{
+    padding-right: 5px;
+}
+
+.socialMediaEnd img:hover{
+    width: 28px;
+    transition: 0.5s; 
+}
+
+.socialMediaEndLink:hover{
+    filter: brightness(0);
+    transition: 0.5s;    
+}
+
+.CallUsMap{
+    width: 50%;    
+}
+
+.CallUsMap iframe{
+    width: 100%;
+    height: 100%;
+
+}
+
+
+/*Responsivo*/
+
+@media screen and (max-width: 840px){
+
+    .contactConteiner{
+        flex-direction: column;
+        width: 100%;
+        height: 800px;
+    }
+
+    .CallUsContent{
+        width: 100%;
+        height: 50%; 
+    }    
+
+    .CallUsMap{
+        width: 100%;
+        height: 50%;       
+    }
+    
+    .CallUsAbout{
+        width: 50%;
+        margin: auto;
+        text-align: center;
+    }
+    
+    .CallUsAbout h2{
+        font-size: 16px;
+    }
+    
+    .CallUsAbout h3{
+        font-size: 28px;
+        margin: auto;      
+    }
+
+    .CallUsAboutContent{
+        margin: auto;
+    }
+
+    .CallUsImg{
+        width: 50px;
+    }
+
+    .CallUsText{
+        font-size: 14px;
+    }
+
+}
+
+
+@media screen and (max-width: 495px){
+
+    .CallUsAbout{       
+        width: 80%;
+        margin: auto;
+        padding-top: 30px;
+    }
+    
+    .CallUsAbout h2{
+        font-size: 12px;
+    }
+    
+    .CallUsAbout h3{
+        font-size: 20px;
+    }
+    
+    .CallUsImg{
+        width: 40px;
+    }
+
+    .CallUsText{
+        font-size: 12px;
+    }
+
+}

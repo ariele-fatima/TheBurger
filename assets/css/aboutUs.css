@@ -1,0 +1,192 @@
+/*Sobre Nós*/
+.AboutUsConteiner{
+    width: 100%;
+    height: 1100px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.AboutUsContent{ /*a div da historia e do video*/
+    height: 35%;
+    display: flex;
+}
+
+.AboutUsGallery{ /*div do instagram*/
+    height: 65%;
+}
+
+
+/*História sobre a empresa*/
+.AboutUsHistory{
+    width: 50%;
+    padding: 40px;
+    background-image: url('../images/MenuBackground1.png');
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.AboutUsHistoryContent{
+    width: max-content;
+    height: max-content;
+
+}
+
+.AboutUsHistory h2{
+    margin: 0;
+    font-size: 32px;
+}
+
+.AboutUsHistory h4{
+    font-size: 18px;
+    font-style: italic;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 35px;
+}
+
+.AboutUsHistory p{
+    margin: 0;
+    text-align: justify;
+    font-size: 15px;
+}
+
+/*Video*/
+.AboutUsVideo{
+    width: 50%;
+}
+
+.AboutUsVideo iframe{
+    width: 100%;
+    height: 100%;
+}
+
+
+/*Instagram*/
+.AboutUsGalleryTitle{
+    height: 20%;
+    margin: 0;
+    display: flex;
+    font-family: 'Nunito', sans-serif;
+}
+
+.AboutUsGallery h2{
+    margin: auto;
+    display: flex;
+    align-self: center;
+    width: max-content;
+    font-size: 32px;
+}
+
+.AboutUsGalleryContent{
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.AboutUsGalleryItem{
+    display: flex;
+    box-sizing: border-box;
+    width: 240px;
+    margin: 10px 5px;
+}
+
+.AboutUsGalleryItem img{
+    width: 100%;
+}
+
+.AboutUsGalleryItem{
+    justify-content: center;
+}
+
+.AboutUsGalleryItem img:hover{
+    filter: grayscale(80%) ;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 1264px){
+
+    .AboutUsGalleryItem:nth-last-child(-n + 2) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1014px){
+
+    .AboutUsGalleryItem:nth-last-child(-n + 4) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 840px){
+    .AboutUsConteiner{
+        height: 1500px;
+    }
+
+    .AboutUsContent{ /*a div da historia e do video*/
+        flex-direction: column;
+        width: 100%;
+        height: 55%;
+    }
+
+    .AboutUsGallery{ /*div do instagram*/
+        height: 45%;
+    }
+
+    .AboutUsHistory{
+        width: 100%;
+        height: 50%;
+    }
+
+    .AboutUsVideo{
+        width: 100%;
+        height: 50%;
+    }
+
+    .AboutUsGallery h2{
+        font-size: 28px;
+    }
+
+    .AboutUsGalleryTitle{
+        height: 15%;
+    }
+
+    .AboutUsGalleryContent{
+        height: 85%;
+    }
+
+}
+
+@media screen and (max-width: 764px){
+
+    .AboutUsGalleryItem:nth-last-child(-n + 6) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 514px){
+
+    .AboutUsGalleryItem:nth-last-child(-n + 8) {
+        display: none;
+    }
+
+    .AboutUsHistory h2{
+        font-size: 28px;
+    }
+
+    .AboutUsHistory h4{
+        font-size: 16px;
+    }
+
+    .AboutUsHistory p{
+        font-size: 14px;
+    }
+
+}
+

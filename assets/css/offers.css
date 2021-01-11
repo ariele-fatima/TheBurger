@@ -1,0 +1,240 @@
+/*Ofertas*/
+
+.offersSectionConteiner{
+    height: 800px;
+    width: 100%;
+    margin: 0;
+    font-family: 'Just Another Hand', cursive;
+}
+
+.offersCarouselContent{
+    background-color: #1c1c1c;
+    user-select: none;
+    height: 100%;
+    position: relative;
+
+}
+
+#i1, #i2, #i3, #i4, #i5{ 
+    display: none;
+}
+
+.slide_img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+
+.slide_img img{
+    width: 100%;
+    height: 100%;
+}
+
+.prev, .next{
+    width: 7%;
+    height: 100%;
+    position: absolute;
+    color:rgba(244, 244, 244,.9);
+    z-index: 99;
+    transition: .45s;
+    cursor: pointer;
+    text-align: center;
+}
+
+.next{right:0;}
+.prev{left:0;}
+
+
+
+.prev span, .next span{
+    font-size: 200px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);    
+}
+
+.prev img, .next img{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 50%;
+}
+
+
+.prev img{
+    left: 0;
+}
+
+
+.next img{
+    right: 0;
+}
+
+
+.center span{
+    position: absolute;
+    font-size: 70px;
+    color: white;
+    top: 60%;
+    left: 10%;
+}
+
+.prev:hover, .next:hover{
+    transition: .3s;
+
+}
+
+.prev img:hover, .next img:hover{
+    width: 90px;
+    height: 90px;
+}
+
+
+#nav_slide{
+	width: 100%;
+	bottom: 12%;
+	height: 11px;
+	position: absolute;
+	text-align: center;
+	z-index: 99;
+	cursor: default;
+}
+
+#nav_slide .dots{
+	top: -5px;
+	width: 18px;
+	height: 18px;
+	margin: 0 4px;
+	position: relative;
+	border-radius: 100%;
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.6);
+	transition: .4s;
+}
+
+#nav_slide .dots:hover {
+	cursor: pointer;
+	background-color: rgba(255, 255, 255, 0.9);
+	transition: .25s
+}
+
+.slide_img{z-index: -1;}
+
+
+#i1:checked ~ #one  ,
+#i2:checked ~ #two  ,
+#i3:checked ~ #three,
+#i4:checked ~ #four ,
+#i5:checked ~ #five 
+{z-index: 9; animation: scroll 1s ease-in-out;}
+
+#i1:checked  ~  #nav_slide #dot1,
+#i2:checked  ~  #nav_slide #dot2,
+#i3:checked  ~  #nav_slide #dot3,
+#i4:checked  ~  #nav_slide #dot4,
+#i5:checked  ~  #nav_slide #dot5
+{ background-color: rgba(255,255,255,.9);} 
+
+ @keyframes scroll{
+0%{	opacity:.4;}
+100%{opacity:1;}
+
+}	
+
+
+
+@media screen and (max-width: 1240px){
+    .offersSectionConteiner{
+        height: 600px;
+    }    
+
+    .center span{
+        font-size: 60px;
+        top: 50%;
+    }
+    
+}
+
+@media screen and (max-width: 1000px){
+    .offersSectionConteiner{
+        height: 500px;
+    }    
+
+    .center span{
+        font-size: 50px;
+        top: 50%;
+    }
+
+    .prev img, .next img{
+        width: 70px;
+        height: 70px;        
+    }
+
+    .prev img:hover, .next img:hover{
+        width: 80px;
+        height: 80px;
+    }
+    
+    #nav_slide .dots{
+        width: 16px;
+        height: 16px;
+    }
+    
+}
+
+@media screen and (max-width: 780px){
+    .offersSectionConteiner{
+        height: 400px;
+    }   
+    
+    .center span{
+        font-size: 30px;
+        top: 50%;
+    }
+
+    .prev img, .next img{
+        width: 60px;
+        height: 60px;        
+    }
+
+    .prev img:hover, .next img:hover{
+        width: 70px;
+        height: 70px;
+    }
+
+    #nav_slide .dots{
+        top: 10px;
+        width: 14px;
+        height: 14px;
+    }
+    
+}
+
+@media screen and (max-width: 460px){
+    .offersSectionConteiner{
+        height: 300px;
+    }    
+
+    .center span{
+        font-size: 20px;
+        top: 50%;
+    }
+
+    .prev img, .next img{
+        width: 30px;
+        height: 30px; 
+    }
+
+    .prev img:hover, .next img:hover{
+        width: 40px;
+        height: 40px;
+    }
+
+    #nav_slide .dots{
+        top: 10px;
+        width: 10px;
+        height: 10px;
+    }
+    
+}
