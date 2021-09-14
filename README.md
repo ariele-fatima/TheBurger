@@ -70,13 +70,15 @@ Duplo clique no arquivo index.html
 
 ## ⚙ Funcionalidades
 
-:heavy_check_mark: Alerta de vitória ou empate
+:heavy_check_mark: Carrossel com ofertas
 
-:heavy_check_mark: Botão para iniciar nova partida
+:heavy_check_mark: Layout responsivo
 
-:heavy_check_mark: Placar
+:heavy_check_mark: Design One Page
 
-:heavy_check_mark: Botão para reiniciar placar
+:heavy_check_mark: Menu com animação
+
+:heavy_check_mark: Mídias sociais, mapa e vídeo
 
 
 ## 📝 Licença
